@@ -43,7 +43,8 @@ html, body, #root, #main {
 #sidebar {
 	width: 300px;
 	height: 100%;	
-	background-color: #202125
+	background-color: #202125;
+	float: left;
 }
 
 #sidebar-channels {
@@ -72,15 +73,15 @@ html, body, #root, #main {
 	margin: 0px;
 }
 
-#sidebar-channels::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
 	background-color: transparent;
 }
 
-#sidebar-channels::-webkit-scrollbar {
+::-webkit-scrollbar {
 	width: 10px;
 }
 
-#sidebar-channels::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
 	background-color: #4B4C50;
 	border-radius: 10px;
 	border: 6px solid transparent;
@@ -103,4 +104,67 @@ html, body, #root, #main {
 .sidebar-panel {
 	padding: 15px 20px;
 	color: #aaa;
+}
+
+#diff {
+	width: calc( 100% - 300px );
+	height: 100%;
+	overflow-y: scroll;
+	float: right;
+}
+
+.class-change {
+	width: 100%;
+	padding-top: 20px;
+	padding-left: 40px;
+}
+
+.color-change {
+	color: #e4c08a;
+	font-weight: bold;
+}
+
+.color-class {
+	color: #DB7A56;
+	font-weight: bold;
+}
+
+.color-added {
+	color: #0EB67B;
+	font-weight: bold;
+}
+
+.color-removed {
+	color: #d32927;
+	font-weight: bold;
+}
+
+
+.color-type {
+	color: #24A2AE;
+	font-weight: bold;
+}
+
+.color-tags {
+	background-color: rgba(255,255,255,0.5);
+	color: white;
+}
+
+.color-security {
+	background-color: rgba(255,0,0,0.5);
+	color: white;
+}
+
+.color-serialization {
+	background-color: rgba(219, 122, 86, 0.5);
+	color: white;
+}
+
+
+.class-member {
+	padding-left: 40px;
+}
+
+.class-sub-member {
+	margin-left: 40px;
 }
